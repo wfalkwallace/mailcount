@@ -1,4 +1,4 @@
 mailcount
 =========
 
-ubersicht gmail inbox count plugin
+[ubersicht](https://github.com/felixhageloh/uebersicht) gmail inbox count plugin
