@@ -1,16 +1,11 @@
 username = "<user>"     # enter your gmail account username here
 
-# username = process.env.mc_user
-# password = process.env.mc_pass
-
-
-
 command: "security find-internet-password -ga #{username} 2>&1 | grep \"password\" | sed -e 's/^[^\"]*\"//' -e 's/\".*$//' | xargs -I pass curl -su #{username}:pass https://mail.google.com/mail/feed/atom || echo \"null\""
 
 refreshFrequency: 10000     # refresh every 10 seconds (10k ms)
 
 render: (_) -> """
-  <div class='count'>~</div>
+  <div class='count'>↭</div>
   <div class='ts hidden'></div>
 """
 
