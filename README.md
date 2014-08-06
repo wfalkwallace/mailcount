@@ -1,7 +1,7 @@
-mailcount
+MailCount (MC)
 =========
 
-mailcount is an [ubersicht](https://github.com/felixhageloh/uebersicht) plugin to display the number of unread emails in your gmail account.
+MailCount is an [ubersicht](https://github.com/felixhageloh/uebersicht) plugin to display the number of unread emails in your gmail account.
 
 Installation
 ============
