@@ -10,6 +10,7 @@ render: (_) -> """
 """
 
 update: (output, domEl) ->
+  # feel free to modify these  to fit your workflow/inbox
   lowcount_color = '#c6fbc8'
   lowcount_max = 9
   midcount_color = '#fff'
