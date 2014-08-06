@@ -9,8 +9,13 @@ render: (_) -> """
   <div class='ts hidden'></div>
 """
 
-
 update: (output, domEl) ->
+  lowcount_color = '#c6fbc8'
+  lowcount_max = 9
+  midcount_color = '#fff'
+  midcount_max = 14
+  highcount_color = '#ff4d4d'
+
   fullcount_regex = /.*<fullcount>(\d+)<\/fullcount>.*/
   fullcount_match = output.match(fullcount_regex)
   if fullcount_match
@@ -19,12 +24,12 @@ update: (output, domEl) ->
     $(domEl).find('.ts').addClass('hidden')
     $(domEl).find('.ts').text('as of ' + @ftime())
 
-    if fullcount < 10
-      $(domEl).find('.count').css color: '#c6fbc8'
-    else if fullcount >= 10 and fullcount < 15
-      $(domEl).find('.count').css color: '#fff'
+    if fullcount <= lowcount_max
+      $(domEl).find('.count').css color: lowcount_color
+    else if fullcount > lowcount_max and fullcount <= midcount_max
+      $(domEl).find('.count').css color: midcount_color
     else
-      $(domEl).find('.count').css color: '#ff4d4d'
+      $(domEl).find('.count').css color: highcount_color
   else
     $(domEl).find('.ts').removeClass('hidden')
 
