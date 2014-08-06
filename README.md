@@ -5,7 +5,7 @@ MailCount is an [ubersicht](https://github.com/felixhageloh/uebersicht) plugin t
 
 Installation
 ============
-1. Download and move mailcount.widget to your ubersicht widgets folder.
+1. Download and move mc.widget to your ubersicht widgets folder.
 2. Replace `<user>` on line 1 with your gmail account username.[^1]
 3. Optionally, adjust the color thresholds to your liking.
 
