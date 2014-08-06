@@ -22,9 +22,9 @@ update: (output, domEl) ->
     if fullcount < 10
       $(domEl).find('.count').css color: '#c6fbc8'
     else if fullcount >= 10 and fullcount < 15
-      $(domEl).find('.count').css color: ':#fff'
+      $(domEl).find('.count').css color: '#fff'
     else
-      $(domEl).find('.count').css color: ':#ff4d4d'
+      $(domEl).find('.count').css color: '#ff4d4d'
   else
     $(domEl).find('.ts').removeClass('hidden')
 
