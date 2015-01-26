@@ -19,3 +19,7 @@ It also gracefully fails when you lose network connectivity, by continuing to di
 [^1]: note that this requires you are using OSX and your gmail account credentials be stored in your OSX keychain.
 
 [^2]: if you refresh the widget however, you'll just see a `↭` symbol indicating lack of connectivity.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/wfalkwallace/mailcount/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
